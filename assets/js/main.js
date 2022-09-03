@@ -54,3 +54,21 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+// validation 
+function submitInfo(){
+let contactName = document.getElementById("contact_name").value
+let name = /^[a-zA-Z]+$/;
+
+let contactMail = document.getElementById("contact_mail").value;
+var mail = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+if (name == " ") {
+   console.log('prime')}
+else if(!contactName.match(name)){
+    alert("Please  enter valid name")
+}
+else if(!contactMail.match(mail)){
+    alert("Please enter valid mail address")
+}
+}

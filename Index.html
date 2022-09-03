@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
 
-    <title>Portfolio website complete</title>
+    <title>Pratiksagar</title>
   </head>
   <body>
     <!--===== HEADER =====-->
@@ -194,15 +194,7 @@
           <a href="" class="work__img">
             <img src="assets/img/work3.jpg" alt="" />
           </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work4.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work5.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work6.jpg" alt="" />
-          </a>
+
         </div>
       </section>
 
@@ -212,18 +204,20 @@
 
         <div class="contact__container bd-grid">
           <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
+            <input type="text" placeholder="Name" class="contact__input"  id="contact_name"/>
+            <input type="mail" placeholder="Email" class="contact__input" id="contact_mail" />
             <textarea
               name=""
               id=""
               cols="0"
               rows="10"
+              placeholder="Enter your querry here!"
               class="contact__input"
             ></textarea>
             <input
               type="button"
-              value="Enviar"
+              value="Submit"
+              onclick="submitInfo()"
               class="contact__button button"
             />
           </form>
